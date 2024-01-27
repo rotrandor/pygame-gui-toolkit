@@ -27,7 +27,7 @@ isort = "*"
 poetry-bumpversion = ">=0.3.2"
 tox = ">=4.0"
 
-[tool.poetry.group.doc.dependencies]
+[tool.poetry.group.docs.dependencies]
 sphinx = "*"
 sphinx-rtd-theme = "*"
 sphinx-copybutton = "*"
