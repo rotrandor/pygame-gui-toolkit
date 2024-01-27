@@ -1,0 +1,49 @@
+[build-system]
+requires = ["poetry>=1.2.0"]
+build-backend = "poetry.core.masonry.api"
+
+[tool.poetry]
+name = "pygame-gui-toolkit"
+version = "0.0.0"
+description = "A powerful and flexible GUI toolkit built on top of Pygame, providing a seamless way to create interactive and visually appealing user interfaces for your Python games and applications."
+authors = ["rotrandor <rotrandor@gmail.com>"]
+readme = "README.md"
+repository = "https://github.com/rotrandor/pygame-gui-toolkit/"
+documentation = "https://readthedocs.org/projects/pygame-gui-toolkit/"
+classifiers = [
+    "Topic :: Software Development :: Libraries :: pygame",
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3.10",
+    "Programming Language :: Python :: 3.11",
+    "Programming Language :: Python :: 3.12",
+]
+[tool.poetry.dependencies]
+python = "^3.10"
+
+[tool.poetry.group.dev.dependencies]
+black = "*"
+flakeheaven = "*"
+isort = "*"
+poetry-bumpversion = ">=0.3.2"
+tox = ">=4.0"
+
+[tool.poetry.group.doc.dependencies]
+sphinx = "*"
+sphinx-rtd-theme = "*"
+sphinx-copybutton = "*"
+m2r2 = "*"
+
+[tool.poetry_bumpversion.file."pygame_gui_toolkit/__init__.py"]
+search = '__version__ = "{current_version}"'
+replace = '__version__ = "{new_version}"'
+
+[tool.black]
+line-length = 120
+
+[tool.isort]
+profile = "black"
+lines_after_imports = 2
+skip_gitignore = true
+
+[tool.flakeheaven]
+max-line-length = 120

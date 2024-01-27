@@ -1,0 +1,8 @@
+.pyc
+.tox
+dist
+
+docs/build
+
+.flakeheaven_cache
+.python-version
