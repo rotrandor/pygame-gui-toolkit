@@ -8,8 +8,8 @@ version = "0.0.0"
 description = "A powerful and flexible GUI toolkit built on top of Pygame, providing a seamless way to create interactive and visually appealing user interfaces for your Python games and applications."
 authors = ["rotrandor <rotrandor@gmail.com>"]
 readme = "README.md"
-repository = "https://github.com/rotrandor/pygame-gui-toolkit"
-documentation = ""
+repository = "https://github.com/rotrandor/pygame-gui-toolkit/"
+documentation = "https://readthedocs.org/projects/pygame-gui-toolkit/"
 classifiers = [
     "Topic :: Software Development :: Libraries :: pygame",
     "Programming Language :: Python :: 3",
